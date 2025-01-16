@@ -1,132 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-
-        .button {
-        background-color: #333;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 30px;
-        margin: 4px 2px;
-        cursor: pointer;
-        }
-
-        .button2 {
-        background-color: #333;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        position: relative;
-        left: 200px;
-        display: inline-block;
-        font-size: 30px;
-        margin: 4px 2px;
-        cursor: pointer;
-        }
-
-        .button3 {
-        background-color: #333;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        position:relative;
-        left: 420px;
-        display: inline-block;
-        font-size: 30px;
-        margin: 4px 2px;
-        cursor: pointer;
-        }
-
-        .button4 {
-        background-color: #333;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        position:relative;
-        left:580px;
-        display: inline-block;
-        font-size: 30px;
-        margin: 4px 2px;
-        cursor: pointer;
-        }
-
-        .button5 {
-        background-color: #333;
-        border: none;
-        color: white;
-        padding: 20px 34px;
-        text-align: center;
-        text-decoration: none;
-        position:relative;
-        left:800px;
-        display: inline-block;
-        font-size: 30px;
-        margin: 4px 2px;
-        cursor: pointer;
-        }
-        
-        .menu {
-          overflow: hidden;
-          background-color: #333;
-        }
-        
-
-        
-        </style>
-<header>
-    <nav>
-        <div class="menu">
-            <ul>
-                <div class ="button" onclick="HomeMenu()">Home</div>
-                <div class ="button2" onclick="About()">About</div>
-                <div class ="button3" onclick="Timeline()">Timeline</div>
-                <div class ="button4" onclick="JumpIn()">Jump In</div>
-                <div class ="button5" onclick="Contact()">Contact</div>
-            </ul>
-            <script>
-                //Ability to redirect the menus back and forth
-                function HomeMenu() {
-                    location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/index.html";
-                }
-                function About(){
-                    location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/about.html";
-                }
-                function Timeline(){
-                    location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/timeline.html";
-                }
-                function JumpIn(){
-                    location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/jumpin.html";
-                }
-                function Contact(){
-                    location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/contact.html";
-                }
-            </script>
-        </div>
-    </nav>
-</div>
-
-</header>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stepping Stone</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <style>
+        body {
+            background-color: gray;
+        }
+        .menu {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        .menu ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .menu li {
+            margin: 4px 2px;
+        }
+
+        .menu .button {
+            background-color: #333;
+            border: none;
+            color: white;
+            padding: 20px 34px;
+            text-align: center;
+            font-size: 30px;
+            cursor: pointer;
+        }
+
+        .button:hover {
+            background-color: #555;
+        }
+
+        .content {
+            color:rgb(80, 29, 128);
+            font-size: 30px;
+            text-align: center;
+            margin-top: 50px;
+        }
+    </style>
 </head>
+
 <body>
-    <body style="background-color: gray;">
-    <h1 style="font-family: 'Times New Roman', Times, serif; color:rgb(80, 29, 128); text-align: center;">Taking The First Step</h1>
-    <p style="color:rgb(80, 29, 128); font-size: 30px; text-align: center;">This is a stepping stone to my journey as a full stack developer.</p>
-    <img align="left" src="https://media.wired.com/photos/5bd8e9b227e7482cd84eb3fb/master/w_1600%2Cc_limit/stoneskipping.gif" width="1850" height="720"/>
-</body>
+    <header>
+        <nav>
+            <div class="menu">
+                <ul>
+                    <li><button class="button" onclick="HomeMenu()">Home</button></li>
+                    <li><button class="button" onclick="About()">About</button></li>
+                    <li><button class="button" onclick="Timeline()">Timeline</button></li>
+                    <li><button class="button" onclick="JumpIn()">Jump In</button></li>
+                    <li><button class="button" onclick="Contact()">Contact</button></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="content">
+        <h1>Taking The First Step</h1>
+        <p>This is a stepping stone to my journey as a full stack developer.</p>
+        <img align="left" src="https://media.wired.com/photos/5bd8e9b227e7482cd84eb3fb/master/w_1600%2Cc_limit/stoneskipping.gif" width="1850" height="720" alt="Stone skipping animation"/>
+    </div>
+
+    <script>
+        // Ability to redirect the menus back and forth
+        function HomeMenu() {
+            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/index.html";
+        }
+        function About() {
+            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/about.html";
+        }
+        function Timeline() {
+            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/timeline.html";
+        }
+        function JumpIn() {
+            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/jumpin.html";
+        }
+        function Contact() {
+            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/contact.html";
+        }
+    </script>
 </body>
 </html>
