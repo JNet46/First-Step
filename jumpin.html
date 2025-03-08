@@ -3,11 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact</title>
+    <title>Jump In</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <style>
         body {
             background-color: gray;
+        }
+        canvas {
+            display: block;
+            background: lightblue;
         }
         .menu {
             background-color: #333;
@@ -41,7 +45,7 @@
         }
 
         .content {
-            color: indigo;
+            color: aquamarine;
             font-size: 30px;
             text-align: center;
             margin-top: 50px;
@@ -65,27 +69,30 @@
     </header>
 
     <div class="content">
-        <p>This is my contact information</p>
-        <h1>Email: james.s.sherman@example-pet-store.com</h1>
-        <h2>Phone: 123-456-7890</h2>
+        <p>Why not just go with the flow</p>
     </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <script src="game.js"></script>
+
 
     <script>
         // Ability to redirect the menus back and forth
         function HomeMenu() {
-            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/index.html";
+            location.href="index.html";
         }
         function About() {
-            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/about.html";
+            location.href="about.html";
         }
         function Timeline() {
-            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/timeline.html";
+            location.href="timeline.html";
         }
         function JumpIn() {
-            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/jumpin.html";
+            location.href="jumpin.html";
         }
         function Contact() {
-            location.href="https://5500-idx-first-step-1736881318188.cluster-hf4yr35cmnbd4vhbxvfvc6cp5q.cloudworkstations.dev/.idx/contact.html";
+            location.href="contact.html";
         }
     </script>
 </body>
